@@ -144,7 +144,7 @@ def print_metrics(metrics: Dict[str, float], name: str) -> None:
     """
     평가 지표를 출력합니다.
     """
-    print(f"\n📈 {name} 평가 결과:")
+    print(f"\n[{name}] 평가 결과:")
     print(f"  ROC-AUC:   {metrics['roc_auc']:.4f}")
     print(f"  PR-AUC:    {metrics['pr_auc']:.4f}")
     print(f"  Recall:    {metrics['recall']:.4f}")
@@ -167,7 +167,7 @@ def train_logistic_regression(X_train: pd.DataFrame,
     Logistic Regression 모델을 학습합니다.
     """
     print("\n" + "=" * 60)
-    print("🔵 Logistic Regression 학습")
+    print("Logistic Regression 학습")
     print("=" * 60)
     
     # 스케일링
@@ -224,7 +224,7 @@ def train_lightgbm(X_train: pd.DataFrame,
     LightGBM 모델을 학습합니다.
     """
     print("\n" + "=" * 60)
-    print("🟢 LightGBM 학습")
+    print("LightGBM 학습")
     print("=" * 60)
     
     # 클래스 불균형 계산
@@ -313,7 +313,7 @@ def evaluate_on_test(models: Dict[str, Any],
     테스트셋에서 모든 모델을 평가합니다.
     """
     print("\n" + "=" * 60)
-    print("🎯 테스트셋 최종 평가")
+    print("테스트셋 최종 평가")
     print("=" * 60)
     
     test_results = {}
@@ -348,7 +348,7 @@ def save_results(all_results: Dict,
     """
     model_dir.mkdir(parents=True, exist_ok=True)
     
-    print("\n💾 모델 저장 중...")
+    print("\n모델 저장 중...")
     
     # Logistic Regression 저장
     joblib.dump(models['Logistic Regression'], model_dir / 'logistic_regression.pkl')
@@ -541,7 +541,7 @@ Actual  0    {lgb_test['true_negative']:,}    {lgb_test['false_positive']:,}
 
 ---
 
-> **📌 다음 단계**: 딥러닝 모델 학습 또는 Risk Score 생성
+> **다음 단계**: 딥러닝 모델 학습 또는 Risk Score 생성
 """
     
     # 저장
