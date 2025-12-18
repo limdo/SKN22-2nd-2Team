@@ -49,7 +49,7 @@ MODEL_DIR = Path(__file__).parent.parent / 'models'
 REPORT_DIR = Path(__file__).parent.parent / 'docs' / '02_training_report'
 
 # 랜덤 시드
-RANDOM_STATE = 42
+RANDOM_STATE = 719
 
 # 제외할 컬럼
 EXCLUDE_COLS = ['msno', 'is_churn']

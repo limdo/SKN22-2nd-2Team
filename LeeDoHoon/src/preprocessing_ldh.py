@@ -400,9 +400,9 @@ def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
 # 데이터 분할 함수
 # ============================================
 def split_dataset(df: pd.DataFrame, 
-                  test_size: float = 0.2, 
-                  valid_size: float = 0.1,
-                  random_state: int = 42) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+                  test_size: float = 0.15, 
+                  valid_size: float = 0.15,
+                  random_state: int = 719) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """
     데이터를 train/valid/test로 분할합니다.
     Stratified split으로 churn 비율을 유지합니다.

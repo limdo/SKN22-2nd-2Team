@@ -50,7 +50,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 MODEL_DIR = PROJECT_ROOT / "models"
 REPORT_DIR = PROJECT_ROOT / "docs" / "02_training_report"
 
-RANDOM_STATE = 42
+RANDOM_STATE = 719
 
 
 # ============================================
